@@ -1,5 +1,5 @@
 heder	Length	GC_amont	CG_precent
->ENST00000622028.1 cds chromosome	353	193	54.67 %
+>ENST00000622028.1 cds chromosome	1163	436	37.49 %
 >ENST00000632585.1 cds scaffold	345	158	45.80 %
 >ENST00000632205.1 cds scaffold	351	183	52.14 %
 >ENST00000632891.1 cds scaffold	351	184	52.42 %
