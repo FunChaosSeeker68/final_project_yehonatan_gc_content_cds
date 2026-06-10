@@ -1,5 +1,5 @@
-dna_seq=open('data/data.fa.fna','r')
-output=open('results/output.txt','w')
+dna_seq=open('data/homosapians.fa','r')
+output=open('results/output_homosapions.txt','w')
 metiral=""
 Length=0
 
@@ -7,16 +7,17 @@ output.write("heder\tLength\tGC_amont\tCG_precent\n")
 cont=0
 def rearol (metiral,heder):
     GC_cont=0
-    part=heder.split("[")
-    output.write(str(part[0])+"\t")
     Length=len(metiral)
-    output.write(str(Length)+"\t")
-    for letter in metiral:
-        if letter=="C" or letter=="G":
-            GC_cont=GC_cont+1
-    output.write(str(GC_cont)+"\t")
-    GC_precent=GC_cont*100/Length
-    output.write(("%.2f %%" % ((GC_precent)))+"\n")
+    if Length >300:
+        part=heder.split(":")
+        output.write(str(part[0])+"\t")
+        output.write(str(Length)+"\t")
+        for letter in metiral:
+            if letter=="C" or letter=="G":
+                GC_cont=GC_cont+1
+        output.write(str(GC_cont)+"\t")
+        GC_precent=GC_cont*100/Length
+        output.write(("%.2f %%" % ((GC_precent)))+"\n")
 
 
 
