@@ -92,3 +92,4 @@ for line in dna_seq_homosapions:
         metiral=""
         curr_hedder=line
 rearol_homosapions(metiral,curr_hedder)
+cont=0
